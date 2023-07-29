@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "General Sans";
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2vw;
+}
+
+#nav a {
+  font-size: 18px;
+  color: white;
+}
+
+#heading {
+  margin-top: 90px;
+}
+
+#heading h1 {
+  font-size: 10vw;
+  opacity: 0.6;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-left: 3vw;
+}
+
+#heading #secondh1 {
+  margin-left: 15vw;
+}
+
+.blocktext {
+  width: fit-content;
+}
+
+.blocktext h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+#smallheadings {
+  margin-top: 100px;
+  padding: 30px;
+}
+
+#smallheadings h5 {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 1vw;
+  margin-top: 0.5vw;
+}
+
+#herofooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 1%;
+  padding: 0 2vw;
+}
+
+#herofooter a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#herofooter #iconset {
+  display: flex;
+  gap: 5px;
+}
+
+#herofooter .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #888;
+}
