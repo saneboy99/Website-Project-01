@@ -21,6 +21,16 @@ body {
   border-radius: 50%;
   background-color: white;
 }
+
+.bounding {
+  width: fit-content;
+  overflow: hidden;
+}
+
+.bounding .boundingelem {
+  transform: translateY(100%);
+}
+
 #main {
   width: 100%;
   background: black;
@@ -64,6 +74,9 @@ body {
 }
 
 .blocktext {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   width: fit-content;
 }
 
@@ -75,6 +88,9 @@ body {
 }
 
 #smallheadings {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   margin-top: 100px;
   padding: 30px;
 }
