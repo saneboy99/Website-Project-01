@@ -24,16 +24,22 @@ function firstPageAnimation() {
   })
     .to(".boundingelem", {
       y: "0",
-      duration: 1.5,
+      duration: 2,
       stagger: 0.2,
+      delay: -1,
       ease: Expo.easeInOut,
     })
     .from("#herofooter", {
       y: "-10",
       opacity: 0,
-      duration: 1,
+      duration: 1.5,
+      delay: -1,
       ease: Expo.easeInOut,
     });
 }
 
 firstPageAnimation();
+
+function circleFlat() {
+  window.addEventListener("mousemobe", function (dets) {});
+}
