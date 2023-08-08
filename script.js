@@ -41,5 +41,5 @@ function firstPageAnimation() {
 firstPageAnimation();
 
 function circleFlat() {
-  window.addEventListener("mousemobe", function (dets) {});
+  window.addEventListener("mousemove", function (dets) {});
 }
