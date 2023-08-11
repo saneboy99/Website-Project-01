@@ -28,8 +28,6 @@ function firstPageAnimation() {
     });
 }
 
-firstPageAnimation();
-
 function circleFlat() {
   // define default scale value
   var xscale = 1;
@@ -49,7 +47,7 @@ function circleFlat() {
 
     circleMouseFollower(xscale, yscale);
 
-    timeout = setTimeout(function () {
+    var timeout = setTimeout(function () {
       document.querySelector(
         "#minicircle"
       ).style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`;
@@ -61,9 +59,12 @@ function circleMouseFollower(xscale, yscale) {
   window.addEventListener("mousemove", function (dets) {
     document.querySelector(
       "#minicircle"
-    ).style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) circleMouseFollower();`;
+    ).style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(${xscale}, ${yscale})`;
   });
 }
 
 circleFlat();
 circleMouseFollower();
+firstPageAnimation();
+
+// Selectl all three elements
